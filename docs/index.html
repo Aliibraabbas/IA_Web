@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>IA Web</title>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/onnxruntime-web/dist/ort.min.js"></script>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2>Dessine un chiffre !</h2>
+
+  <canvas id="canvas" width="280" height="280"></canvas><br>
+  <button id="clear">Effacer</button>
+  <button id="predict">Prédire</button>
+
+  <h3 id="result"></h3>
+
+
+  <div class="card">
+    <h2>Sélectionne une image</h2>
+    <label class="file-btn">
+      Choisir une image
+      <input type="file" id="file" accept="image/*" hidden>
+    </label>
+
+    <img id="preview" hidden>
+    <h3 id="out"></h3>
+  </div>
+
+
+  <script src="JS/image.js"></script>
+
+  <script src="JS/app.js"></script>
+</body>
+</html>
