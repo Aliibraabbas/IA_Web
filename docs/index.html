@@ -11,24 +11,33 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h2>Dessine un chiffre !</h2>
+  <div class="wrapper">
 
-  <canvas id="canvas" width="280" height="280"></canvas><br>
-  <button id="clear">Effacer</button>
-  <button id="predict">Prédire</button>
+    <div class="digit-box">
+      <h2>Dessine un chiffre !</h2>
 
-  <h3 id="result"></h3>
+      <canvas id="canvas" width="280" height="280"></canvas><br>
+    <div class="btn-row">
+      <button id="clear">Effacer</button>
+      <button id="predict">Prédire</button>
+    </div>
 
+      <h3 id="result"></h3>
+    </div>
 
-  <div class="card">
-    <h2>Sélectionne une image</h2>
-    <label class="file-btn">
-      Choisir une image
-      <input type="file" id="file" accept="image/*" hidden>
-    </label>
+    <div class="divider"></div>
 
-    <img id="preview" hidden>
-    <h3 id="out"></h3>
+    <div class="card">
+      <h2>Sélectionne une image</h2>
+
+      <label class="file-btn">
+        Choisir une image
+        <input type="file" id="file" accept="image/*" hidden>
+      </label>
+
+      <img id="preview" hidden>
+      <h3 id="out"></h3>
+    </div>
   </div>
 
 
